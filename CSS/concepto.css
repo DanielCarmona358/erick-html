@@ -1,0 +1,17 @@
+h1 {
+    font-weight:normal;
+    text-align: center;
+    background-color: rgb(38, 105, 72) ;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    text-align:left;
+    line: height 20px;;
+    text-decoration: none;
+    text-transform: ;
+    letter-spacing:normal;
+    word-spacing: 20px;
+    text-shadow: 0px 0px 0px #000
+}

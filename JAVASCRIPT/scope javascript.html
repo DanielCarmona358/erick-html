@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope Javascript</title>
+</head>
+<body>
+    <script>
+
+        //Global -
+        //Local -
+
+        var variableGlobal = "Esta es Global";
+
+        var miFuncion = function(){
+            //var variableLocal = "Esta es Local";
+            alert(variableLocal);
+
+            var FuncionLocal = function(){
+                var variableLocal ="Esta es variable local, dentro de FuncionLocal";
+                //alert(variableLocal);
+            }
+
+            FuncionLocal();
+
+            
+        }
+        
+        miFuncion();
+        //alert(variableGlobal)
+
+    </script>
+    
+</body>
+</html>

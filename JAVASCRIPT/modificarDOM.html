@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <ol ID="lista">
+        <li>HTML es el lenguaje con el que</li>
+        <li>se define el contendio de las paginas web</li>
+    </ol>
+    <script>
+        var elemento = document.createElement("li"),
+            contenido = document.createTextNode("Nuevo Texto");
+        elemento.appendChild(contenido);
+
+
+        var padre = document.getElementsByTagName("li")[0].parentNode,
+            primerElemento = document.getElementsByTagName("li")[0];
+        padre.insertBefore(elemento, primerElemento);
+        
+    </script>
+    
+</body>
+</html>

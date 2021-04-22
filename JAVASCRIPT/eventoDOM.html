@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento</title>
+</head>
+<body>
+    <button id="boton">Botón</button>
+    <input type="text" id="input">
+    <script>
+        (function(){
+            var saludo = function(e){
+                console.log('Este es un evento de tipo' +" " + e.type);
+
+            };
+
+            //var saludos = function(){
+            //    console.log('Saludos!');
+
+            //};
+            
+
+           var boton = document.getElementById('boton');
+           boton.addEventListener("click", saludo);
+           //boton.addEventListener("click", saludos);
+           //boton.removeEventListener("click", saludo)
+           
+        
+        }())
+    </script>
+    
+</body>
+</html>

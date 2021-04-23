@@ -7,6 +7,7 @@
 }
 
 body {
+    width: 100%;
     background: url(paisaje.jpg)rgb(184, 44, 44);
     background-size: cover;
     color: #fff;
@@ -15,13 +16,13 @@ body {
 
 .wrap {
     width: 90%;
-    max-width: 1000px;
-    /*margin:auto;*/
+    /*margin:auto; */
 }
 
 .widget {
-    width: 40%;
-    max-width: 2em;
+    width:100%;
+    padding-left: 10%;
+    /*max-width: 2em;*/
     /*margin:32px; */
 
 }
@@ -50,7 +51,7 @@ body {
     text-align: center;
     background: rgba(0, 0, 0, .5);
 }
-.reloj .caja-egundos {
+.reloj .caja-segundos {
     display: inline-block;
 }
 

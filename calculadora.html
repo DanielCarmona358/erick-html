@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
+    <title>Calculadora</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="calculadora.js" defer></script> 
 </head>
-<body>
-    <div class="calculator-grid">
-        <div class="output">
-            <div data-previous-operand class="previuos-operand"></div>
-            <div data-previous-operand class="current-operand"></div>
-        </div>
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete>DEL</button>
-        <button data-operation>÷</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>-</button>
-        <button data-number>.</button>
-        <button data-number>0</button>
-        <button type="button" data-equal class="span-two">=</button>
-   </div> 
-    
+<body onload="init()">
+
+    <table class="calculadora">
+        <tr>
+            <td colspan="4"><span id="resultado"></span></td>
+        </tr>
+        <tr>
+            <td><button id="siete">7</button></td>
+            <td><button id="ocho">8</button></td>
+            <td><button id="nueve">9</button></td>
+            <td><button id="reset">C</button></td>
+        </tr>
+        <tr>
+            <td><button id="cuatro">4</button></td>
+            <td><button id="cinco">5</button></td>
+            <td><button id="seis">6</button></td>
+            <td><button id="division">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="tres">3</button></td>
+            <td><button id="dos">2</button></td>
+            <td><button id="uno">1</button></td>
+            <td><button id="multiplicacion">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="cero">0</button></td>
+            <td><button id="igual">=</button></td>
+            <td><button id="suma">+</button></td>
+            <td><button id="resta">-</button></td>
+        </tr>
+    </table> 
+<script src="desarrollo.js"></script>    
 </body>
 </html>
